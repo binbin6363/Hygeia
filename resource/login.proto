@@ -1,0 +1,20 @@
+import "head.proto";
+package hygeia.gen;
+
+
+//enum COMMAND_TYPE
+//{
+//	CT_INT = 1;
+//	CT_CHAR = 2;
+//};
+
+message MessageLogin
+{
+	required MessageHead head = 1;
+    optional bytes md5_paswd = 2;
+    optional uint32 ret_code = 3;
+    optional bytes info = 4;
+}
+
+
+

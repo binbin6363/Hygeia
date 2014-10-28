@@ -1,0 +1,17 @@
+import "head.proto";
+package hygeia.gen;
+
+
+//enum COMMAND_TYPE
+//{
+//	CT_INT = 1;
+//	CT_CHAR = 2;
+//};
+
+message MessageHeartBeat
+{
+	required MessageHead head = 1;
+}
+
+
+

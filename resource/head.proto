@@ -1,0 +1,15 @@
+package hygeia.gen;
+
+
+//enum COMMAND_TYPE
+//{
+//	CT_INT = 1;
+//	CT_CHAR = 2;
+//};
+
+message MessageHead
+{
+	required uint32 cmd = 1;
+	required uint32 uid = 2;
+	required bytes imei = 3;
+}
