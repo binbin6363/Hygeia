@@ -18,3 +18,10 @@ int run(const string &signature)
     cli->on_message("hello", 6);
     cli->on_send("hello", 6);
 }
+
+
+int main(int argc, char *argv[])
+{
+    // test
+    MyClass *testclass = ClassFactory
+}

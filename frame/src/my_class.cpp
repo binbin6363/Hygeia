@@ -8,7 +8,7 @@
  * @modify:
  *
 **/
-
+#include "custype.h"
 namespace hygeia{
 namespace myclass{
 

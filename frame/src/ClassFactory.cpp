@@ -10,13 +10,38 @@
 **/
 
 #include "ClassFactory.h"
+#include "custype.h"
+
+char ClassFactory::IDENTIFY[PASSWD_LENGTH];
 
 ClassFactory::ClassFactory(void)
 {
+    memset(ClassFactory::IDENTIFY, 0, PASSWD_LENGTH);
+    generate_identify();
 }
 
 ClassFactory::~ClassFactory(void)
 {
+    memset(IDENTIFY, 0, PASSWD_LENGTH);
+}
+
+int ClassFactory::generate_identify()
+{
+    srand(time(NULL));
+    for (int i = 0; i < (int)PASSWD_LENGTH; ++i)
+    {
+        // 生成可打印的明文[33-126]
+        IDENTIFY[i] = (rand() % 94) + 33;
+    }
+    fprintf(DEVICE_STD, "class factory generate identify:%s\n", IDENTIFY);
+}
+
+// TODO:获取该值需要身份认证
+const char *ClassFactory::identify() const
+{
+    // 1.身份确认
+    // 2.身份合法返回，反之返回NULL
+    return IDENTIFY;
 }
 
 static ClassFactory &ClassFactory::shared_factory()
@@ -25,12 +50,12 @@ static ClassFactory &ClassFactory::shared_factory()
     return shared_fascory_;
 }
 
-void* ClassFactory::getClassBySignature(const string &inst_signature)
+void* ClassFactory::getClassBySignature(const string &signature)
 {
-    ClassMap::iterator iter = m_classMap.find(inst_signature);
+    ClassMap::iterator iter = m_classMap.find(signature);
     if (m_classMap.end() != iter)
     {
-        return m_classMap[inst_signature];
+        return m_classMap[signature];
     }
     else
     {
