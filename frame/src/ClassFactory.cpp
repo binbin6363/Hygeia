@@ -11,6 +11,9 @@
 
 #include "ClassFactory.h"
 #include "custype.h"
+#include "utils/sutils.h"
+#include "utils/sulib.h"
+using namespace sp;
 
 char ClassFactory::IDENTIFY[PASSWD_LENGTH];
 
@@ -104,6 +107,22 @@ int ClassFactory::signatureCertification(const string &signature)
     {
         return 0;
     }
-}
+} 
 
+
+
+// 加载lib，提取函数，将函数存储于fun_container中，存于map
+int ClassFactory::load_lib(const char *lib_path)
+{
+    int ret = 0;
+    string name = pathname_to_noextname(lib_path);
+    lib_loader libLoader;
+    fun_container fcon;
+    libLoader.open(lib_path);
+    libLoader.attach_fun(name, fcon);
+
+    // 
+    spaceFun.insert(make_pair(name, fcon));
+    return ret;
+}
 

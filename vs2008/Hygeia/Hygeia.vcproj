@@ -404,34 +404,6 @@
 				>
 			</File>
 		</Filter>
-		<Filter
-			Name="gen"
-			>
-			<File
-				RelativePath="..\..\include\gen\head.pb.cc"
-				>
-			</File>
-			<File
-				RelativePath="..\..\include\gen\head.pb.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\include\gen\heartbeat.pb.cc"
-				>
-			</File>
-			<File
-				RelativePath="..\..\include\gen\heartbeat.pb.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\include\gen\login.pb.cc"
-				>
-			</File>
-			<File
-				RelativePath="..\..\include\gen\login.pb.h"
-				>
-			</File>
-		</Filter>
 	</Files>
 	<Globals>
 	</Globals>

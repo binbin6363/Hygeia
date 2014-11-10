@@ -32,6 +32,7 @@ public:
     int registClass(const string &inst_signature, BaseClass *class_inst);
     int unRegistClass(const string &inst_signature);
     const char *identify() const;
+    int load_lib(const char *lib_path);
 private:
     int generate_identify();
     string fetchSignature(const string &inst_signature);
@@ -42,7 +43,8 @@ private:
     // 系统启动时从配置文件加载，可重新加载
     SignatureMap m_signatureMap;
     // 随机生成，每次启动都会生成一个
-    static char IDENTIFY[PASSWD_LENGTH];
+    char IDENTIFY[PASSWD_LENGTH];
+    space_fun spaceFun;
 
     ClassFactory(void);
     ~ClassFactory(void);

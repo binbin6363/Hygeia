@@ -11,6 +11,7 @@
 
 #ifndef __CONFFIG_H__
 #define __CONFFIG_H__
+#include <stdio.h>
 
 #ifndef CEXPORT_API
 // 导出动态库的宏

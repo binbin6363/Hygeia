@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file new_frame.lib
+
+File Type: LIBRARY
+
+Archive member name at 8: /               
+545E180D time/date Sat Nov 08 21:18:05 2014
+         uid
+         gid
+       0 mode
+     11D size
+correct header end
+
+    8 public symbols
+
+     24DA ??0WSAInit@@QEAA@XZ
+     24DA ??1WSAInit@@QEAA@XZ
+     24DA ??_C@_0BC@BKEGFKBE@?$FLFRAME?$FN?5STOP?5?4?4?4?6?$AA@
+     24DA ??_C@_0BD@HHKBNNDG@?$FLFRAME?$FN?5START?5?4?4?4?6?$AA@
+     24DA ??_C@_0BK@INIPEIJD@receive?5data?3?$CFs?0?5size?3?$CFd?6?$AA@
+     24DA ?base@@3PEAUevent_base@@EA
+     24DA start
+     24DA stop
+
+Archive member name at 162: /               
+545E180D time/date Sat Nov 08 21:18:05 2014
+         uid
+         gid
+       0 mode
+     11D size
+correct header end
+
+    3 offsets
+
+        1      352
+        2     1416
+        3     24DA
+
+    8 public symbols
+
+        3 ??0WSAInit@@QEAA@XZ
+        3 ??1WSAInit@@QEAA@XZ
+        3 ??_C@_0BC@BKEGFKBE@?$FLFRAME?$FN?5STOP?5?4?4?4?6?$AA@
+        3 ??_C@_0BD@HHKBNNDG@?$FLFRAME?$FN?5START?5?4?4?4?6?$AA@
+        3 ??_C@_0BK@INIPEIJD@receive?5data?3?$CFs?0?5size?3?$CFd?6?$AA@
+        3 ?base@@3PEAUevent_base@@EA
+        3 start
+        3 stop
+
+Archive member name at 2BC: //              
+545E180D time/date Sat Nov 08 21:18:05 2014
+         uid
+         gid
+       0 mode
+      59 size
+correct header end
