@@ -224,3 +224,4 @@ sourceinsight/
 libev-4.19/
 protobuf-2.6.1/
 *.exe
+*.lib

@@ -307,6 +307,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\new_frame\src\net_util.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\..\new_frame\src\server_session.cpp"
 				>
 			</File>
@@ -346,6 +350,10 @@
 			</File>
 			<File
 				RelativePath="..\..\new_frame\include\net_session.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\new_frame\include\net_util.h"
 				>
 			</File>
 			<File
